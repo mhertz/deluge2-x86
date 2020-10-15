@@ -4,7 +4,7 @@ powershell -executionpolicy remotesigned -Command "Invoke-WebRequest https://git
 powershell -executionpolicy remotesigned -Command "Invoke-WebRequest https://github.com/uuksu/7z.NET/raw/master/7z.NET/7za.exe -OutFile 7za.exe"
 7za x msys2-base-i686-20200517.tar.xz
 7za x msys2-base-i686-20200517.tar
-sed -i 's/Required DatabaseOptional/Never/' /etc/pacman.conf
+sed -i 's/Required DatabaseOptional/Never/' msys32/etc/pacman.conf
 bash -lic "pacman -Syu --noconfirm"
 taskkill /im dirmngr.exe 2>nul
 taskkill /im gpg-agent.exe 2>nul
