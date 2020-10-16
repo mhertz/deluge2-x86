@@ -44,8 +44,8 @@ del gtk-build\gtk\Win32\release\etc\gtk-3.0\im-multipress.conf
 del gtk-build\gtk\Win32\release\lib\harfbuzz.lib
 del gtk-build\gtk\Win32\release\lib\*.pdb
 del gtk-build\gtk\Win32\release\lib\enchant\*.pdb
-del deluge-build\pycairo-*-win_amd64.whl
-del deluge-build\PyGObject-*-win_amd64.whl
+del deluge-build\pycairo-*-win32.whl
+del deluge-build\PyGObject-*-win32.whl
 move /y gtk-build\gtk\Win32\release\python\*.whl deluge-build
 rd /s /q gtk-build\gtk\Win32\release\include 
 rd /s /q gtk-build\gtk\Win32\release\libexec
